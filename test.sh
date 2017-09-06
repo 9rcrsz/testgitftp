@@ -6,3 +6,4 @@ git config git-ftp.password "sds35v"
 # Upload all files
 git ftp init
 
+git ftp push
