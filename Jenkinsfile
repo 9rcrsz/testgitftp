@@ -1,11 +1,11 @@
 pipeline {
     agent any
     stages {
-        stage('Test') {
-            steps {
-		echo '123'
-                sh 'node --version'
-            }
+        stage('Git Clone') {
+            git 'https://github.com/9rcrsz/testgitftp.git'
+        }
+        stage('ng version') {
+            ng version
         }
     }
 }
