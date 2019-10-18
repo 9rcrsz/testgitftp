@@ -3,7 +3,10 @@ pipeline {
     stages {
         stage('Git Clone') {
             steps {
-                npm -v
+                echo "Starting build ...."
+                    sh '''#!/bin/bash
+                          npm -v
+                     '''
             }
         }
     }
