@@ -9,6 +9,7 @@ pipeline {
                           ls -la
                           cd angular
                           ls -la
+                          npm install
                           ng build --prod
                      '''
             }
