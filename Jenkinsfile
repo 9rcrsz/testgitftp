@@ -3,6 +3,11 @@ pipeline {
     stages {
         stage('Git Clone') {
             steps {
+                git 'https://github.com/9rcrsz/testgitftp.git'
+            }
+        }
+        stage('ng version') {
+            steps {
                 echo "Starting build ...."
                     sh '''#!/bin/bash
                           npm -v
