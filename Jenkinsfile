@@ -7,6 +7,9 @@ pipeline {
                     sh '''#!/bin/bash
                           npm -v
                           ls -la
+                          cd angular
+                          ls -la
+                          ng build --prod
                      '''
             }
         }
