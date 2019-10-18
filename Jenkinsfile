@@ -6,6 +6,7 @@ pipeline {
                 echo "Starting build ...."
                     sh '''#!/bin/bash
                           npm -v
+                          ls -la
                      '''
             }
         }
