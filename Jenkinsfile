@@ -2,12 +2,12 @@ pipeline {
     agent any
     stages {
         stage('Git Clone') {
-            step {
+            steps {
                 git 'https://github.com/9rcrsz/testgitftp.git'
             }
         }
         stage('ng version') {
-            step {
+            steps {
                 ng version
             }
         }
